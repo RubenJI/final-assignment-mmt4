@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code4Kids</title>
+    <link rel="stylesheet"
+          href="css/style.css">
+    <link rel="stylesheet"
+          href="css/reset.css">
+    <link rel="stylesheet"
+          href="css/video-js.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat'
+          rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display'
+          rel='stylesheet'>
+          <script src="https://kit.fontawesome.com/bb351c1de1.js"></script>
+          
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <div id="menu">
+            <img id="logo"
+                 src="img/logo@2x.png"
+                 alt="Code4Kids">
+            <nav id="categories">
+                <a href="#">over ons</a>
+                <a href="#">lesmateriaal</a>
+                <a href="#">contact</a>
+            </nav>
+            <div class="switch">
+
+                <div class="toggle"></div>
+                <img class="sun"
+                     src="img/sun@2x.png">
+                <img class="moon"
+                     src="img/moon@2x.png">
+
+
+            </div>
+
+        </div>
+
+        <div id="header-title">Van beginner naar expert<br>
+            Het lesmateriaal brengt je verder</div>
+
+        <div id="header-text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam<br>
+            venenatis vestibulum. Etiam porta sem malesuada magna<br>
+            mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id<br>
+            elit. Donec id elit non mi porta gravida at eget metus.<br>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus.
+        </div>
+
+
+
+
+
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="block">
+                <img class="block-image"
+                     src="img/leer-pink@2x.png">
+                <p class="block-text">Leer</p>
+            </div>
+            <div class="block">
+                <img class="block-image"
+                     src="img/codeer-pink@2x.png">
+                <p class="block-text">Codeer</p>
+            </div>
+            <div class="block">
+                <img class="block-image"
+                     src="img/speel-pink@2x.png">
+                <p class="block-text">Speel</p>
+            </div>
+        </div>
+
+        <div id="modal">
+        
+          <h1 class="modal-title">Lekker bezig!</h1>
+          <p class="modal-text">Klik op het gifje om deze te sluiten.</p>
+          <img class="party"
+          src="img/party.gif">
+        </div>
+
+
+        <div class="container" id="accordion">
+          <h3 class="subject">Algemene introductie</h3>
+          <div class="video-wrapper">
+
+            <video id="player1" class="video-js">
+              <source src="https://player.vimeo.com/external/431181295.hd.mp4?s=ad7bf88ec42a17e2d30659d9f6ff871b5c350884&profile_id=175" type="video/mp4">
+            </video>
+
+            <button id="playButton1" onclick="buttonClick(this.id)" class="player-button">
+              <i class="fa playIcon">&#xf04b;</i>
+           </button>
+            <button id="rewindButton1" onclick="buttonClick(this.id)" class="rewind-button">
+              <i class="fa rewindIcon">&#xf04a;</i>
+            </button>
+            <button id="forwardButton1" onclick="buttonClick(this.id)" class="forward-button">
+              <i class="fa forwardIcon">&#xf04e;</i>
+            </button>
+          </div>
+
+          <h3 class="subject">Workshop 1: Kleuren met code</h3>
+          <div class="video-wrapper">
+            <video id="player2" class="video-js">
+              <source src="https://player.vimeo.com/external/431053683.hd.mp4?s=1eb4b25cd270c2e6a7c6584f28211eefca797624&profile_id=175" type="video/mp4">
+            </video>
+
+            <button id="playButton2" onclick="buttonClick(this.id)" class="player-button">
+              <i class="fa playIcon">&#xf04b;</i>
+           </button>
+            <button id="rewindButton2" onclick="buttonClick(this.id)" class="rewind-button">
+              <i class="fa rewindIcon">&#xf04a;</i>
+            </button>
+            <button id="forwardButton2" onclick="buttonClick(this.id)" class="forward-button">
+              <i class="fa forwardIcon">&#xf04e;</i>
+            </button>
+          </div>
+
+          <h3 class="subject">Workshop 2: Vormen maken</h3>
+          <div class="video-wrapper">
+            <video id="player3" class="video-js">
+              <source src="https://player.vimeo.com/external/430944941.hd.mp4?s=c2ec123e3f7e335ef70341f12b14d6fde7f6ecdd&profile_id=169" type="video/mp4">
+            </video>
+
+            <button id="playButton3" onclick="buttonClick(this.id)" class="player-button">
+              <i class="fa playIcon">&#xf04b;</i>
+           </button>
+            <button id="rewindButton3" onclick="buttonClick(this.id)" class="rewind-button">
+              <i class="fa rewindIcon">&#xf04a;</i>
+            </button>
+            <button id="forwardButton3" onclick="buttonClick(this.id)" class="forward-button">
+              <i class="fa forwardIcon">&#xf04e;</i>
+            </button>
+          </div>
+
+          <h3 class="subject">Workshop 3: bewegen</h3>
+          <div class="video-wrapper">
+            <video id="player4" class="video-js">
+              <source src="https://player.vimeo.com/external/431234156.hd.mp4?s=23ea244a3ad1dbc5027ce11e3b96e6e1f03c2806&profile_id=175" type="video/mp4">
+            </video>
+
+            <button id="playButton4" onclick="buttonClick(this.id)" class="player-button">
+              <i class="fa playIcon">&#xf04b;</i>
+           </button>
+            <button id="rewindButton4" onclick="buttonClick(this.id)" class="rewind-button">
+              <i class="fa rewindIcon">&#xf04a;</i>
+            </button>
+            <button id="forwardButton4" onclick="buttonClick(this.id)" class="forward-button">
+              <i class="fa forwardIcon">&#xf04e;</i>
+            </button>
+          </div>
+
+          <h3 class="subject">Workshop 4: variabelen gebruiken</h3>
+          <div class="video-wrapper">
+            <video id="player5" class="video-js">
+              <source src="https://player.vimeo.com/external/431178939.hd.mp4?s=8f91ef2c061c72451952839503cfe56a9e243f2d&profile_id=175" type="video/mp4">
+            </video>
+
+            <button id="playButton5" onclick="buttonClick(this.id)" class="player-button">
+              <i class="fa playIcon">&#xf04b;</i>
+           </button>
+            <button id="rewindButton5" onclick="buttonClick(this.id)" class="rewind-button">
+              <i class="fa rewindIcon">&#xf04a;</i>
+            </button>
+            <button id="forwardButton5" onclick="buttonClick(this.id)" class="forward-button">
+              <i class="fa forwardIcon">&#xf04e;</i>
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <div class="support container">
+            <div class="support-block">
+                <h1 class="support-title">Support</h1>
+                <p class="support-text">Onze studenten staan voor je klaar. Etiam porta sem<br>
+                    malesuada magna mollis euismod. Nullam id dolor id nibh <br>
+                    ultricies vehicula ut id elit.</p>
+            </div>
+
+            <button id="naar-contact"> naar contact </button>
+        </div>
+<div class="container cards">        
+  <div class="business-cards">
+
+    <div class="contact-card">
+        <div class="headshot one"></div>
+        <div class="personal-information">
+            <p class="name">Alina kovalchuk </p>
+            <p class="function">Hoofd support</p>
+            <p><button class="email">Mail</button></p>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <div class="headshot two"></div>
+        <div class="personal-information">
+            <p class="name">Gorgie Encinas </p>
+            <p class="function">Hoofd support</p>
+            <p><button class="email">Mail</button></p>
+        </div>
+        
+    </div>
+    <div class="contact-card">
+        <div class="headshot three"></div>
+        <div class="personal-information">
+            <p class="name">Kal Visuals </p>
+            <p class="function">Hoofd support</p>
+            <p><button class="email">Mail</button></p>
+        </div>
+    </div>
+     
+    <div class="contact-card">
+        <div class="headshot four"></div>
+        <div class="personal-information">
+            <p class="name">Norman Toth </p>
+            <p class="function">Hoofd support</p>
+            <p><button class="email">Mail</button></p>
+        </div>
+    </div>
+
+</div></div>
+
+    </main>
+
+    <footer>
+        <h1 class="footer-title">Klaar voor de <br>
+            volgende uitdaging?</h1>
+        <h2 class="footer-text">In ons expertprogramma vind je lessen voor gevorderden </h2>
+        <button id="komMaarOp"> Kom maar op </button>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.js"> </script>
+    <script src="js/video.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
